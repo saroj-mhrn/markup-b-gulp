@@ -1,0 +1,164 @@
+/* ---------------------------------------------------------
+   General styles
+   ---------------------------------------------------------*/
+
+// general resets
+body {
+    min-width: 320px;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {margin: 0 0 15px;}
+
+h1,
+.h1 {
+    @include media('<tablet') {
+        // font-size: 38px;
+    }
+}
+
+h2,
+.h2 {
+    @include media('<tablet') {
+        // font-size: 32px;
+    }
+}
+
+h3,
+.h3 {
+    @include media('<tablet') {
+        // font-size: 20px;
+    }
+}
+
+p {
+    margin-bottom: 22px;
+}
+
+a {
+    @include animate(color);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+input [type="email"], 
+input [type="tel"], 
+input[type="search"], 
+input[type="text"], 
+input[type="password"], 
+input[type="file"], 
+input[type="submit"], 
+textarea {
+    -webkit-appearance:none;
+}
+
+// hide tel links on desktop
+@media only screen and (min-width:1025px) {
+    a[href^=tel],a[href^=skype], a[href^=sms] {
+        cursor:default;
+        pointer-events:none;
+    }
+}
+
+// btn
+.btn {
+    @include transition(all 0.25s ease-in);
+    padding: 8px 12px;
+    border: none;
+    min-width: 226px;
+
+    i {
+        margin-right: 15px;
+    }
+}
+
+.btn-lg {
+    font-size: 19px;
+    line-height: 2.2;
+}
+
+// form control
+.form-control {
+    height: 39px;
+    line-height: 25px;
+    margin-bottom: 22px;
+}
+
+// textarea
+textarea.form-control {
+    resize: vertical;
+    min-height: 217px;
+    margin-bottom: 30px;
+}
+
+// bg cover
+.bg-cover {
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+// media
+.media {
+    img {
+        max-width: none;
+    }
+}
+
+// split
+.split {
+    overflow: hidden;
+    margin-bottom: 12px;
+}
+
+.split-title {
+    float: left;
+    margin-right: 15px;
+}
+
+.split-body {
+    display: block;
+    overflow: hidden;
+    text-align: right;
+}
+
+// kern burn effect
+.img {
+    overflow: hidden;
+
+    &:hover {
+        img {
+            opacity: 0.85;
+            transform: scale(1.1);
+        }
+    }
+
+    img {
+        transition: all 1s ease-in;
+    }
+}
+
+// list group
+.list-group-item {
+    background: none;
+    border-width: 1px 0;
+    border-color: #333;
+
+    &:first-child,
+    &:last-child { border-radius: 0; }
+}
+
+// flex justify
+.flex-justify {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#wrapper {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}

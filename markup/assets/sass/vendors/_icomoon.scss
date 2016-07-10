@@ -1,0 +1,49 @@
+/* ---------------------------------------------------------
+   Icomoon styles
+   ---------------------------------------------------------*/
+
+[class^="imoon-"], [class*=" imoon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.imoon-logo:before {
+    content: "\e905";
+}
+.imoon-arrow-down-o:before {
+    content: "\e902";
+}
+.imoon-arrow-right-a:before {
+    content: "\e903";
+}
+.imoon-linkedin:before {
+    content: "\e904";
+}
+.imoon-arrow-top:before {
+    content: "\e900";
+}
+.imoon-search:before {
+    content: "\e901";
+}
+
+.imoon-arrow-down-b:before {
+    content: "\e906";
+}
+
+.imoon-arrow-up-b:before {
+    content: "\e907";
+}
+
+.icon-play:before {
+    content: "\e908";
+}

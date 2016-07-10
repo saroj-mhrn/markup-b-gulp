@@ -1,0 +1,38 @@
+// -------------------------------------------------------
+// Main files
+// -------------------------------------------------------
+
+$breakpoints: (
+    'xs-phone': 320px,
+    'phone': 480px,
+    'tablet': 768px,
+    'desktop': 992px,
+    'widescreen': 1210px
+);
+
+// keywords
+$media-expressions: (
+    'screen': 'screen',
+    'print': 'print',
+    'handheld': 'handheld',
+    'landscape': '(orientation: landscape)',
+    'portrait': '(orientation: portrait)',
+    'retina2x': '(-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi)',
+    'retina3x': '(-webkit-min-device-pixel-ratio: 2.5), (min-resolution: 240dpi)'
+);
+
+@import "variables";
+
+@import 'vendors/include-media';
+@import 'vendors/fonts';
+@import "vendors/icomoon";
+
+@import "vendors/bootstrap/bootstrap";
+
+@import 'base/mixins';
+@import 'base/helpers';
+@import 'base/general';
+
+@import 'layouts/header';
+@import 'layouts/common';
+@import 'layouts/footer';
